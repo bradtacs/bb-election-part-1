@@ -11,6 +11,10 @@ $(document).ready(function() {
         url:'https://bb-election-api.herokuapp.com/',
         method: 'GET',
         dataType: 'json',
+      }).done(function(data) {
+      $('#step3456').append(data);
+      console.log('Got: ' + data)
+      
       });
     });
     console.log('After .ajax');
